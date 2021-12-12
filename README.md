@@ -21,7 +21,7 @@
 
 3. [GO Development](https://github.com/mikeroyal/eBPF-Guide#go-development)
 
-4. [C++ Development](https://github.com/mikeroyal/eBPF-Guide#c-development)
+4. [C++ Development](https://github.com/mikeroyal/eBPF-Guide#cc-development)
 
 5. [Rust Development](https://github.com/mikeroyal/eBPF-Guide#rust-development)
 
