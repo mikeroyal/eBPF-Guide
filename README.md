@@ -44,7 +44,7 @@
   eBPF Architecture Overview
 </p>
 
-[BCC](https://github.com/iovisor/bcc) is a toolkit for creating efficient kernel tracing and manipulation programs built upon eBPF, and includes several useful command-line tools and examples. BCC eases writing of eBPF programs for kernel instrumentation in C, includes a wrapper around LLVM, and front-ends in Python and Lua.
+[BPF Compiler Collection (BCC)](https://github.com/iovisor/bcc) is a toolkit for creating efficient kernel tracing and manipulation programs, and includes several useful tools and examples. It makes use of extended BPF (Berkeley Packet Filters), formally known as eBPF, a new feature that was first added to Linux 3.15. Though, much of what BCC uses requires Linux 4.1 and above.
 
 [Bpftrace](https://github.com/iovisor/bpftrace) is a high-level tracing language for Linux eBPF. Its language is inspired by awk and C, and predecessor tracers such as DTrace and SystemTap. bpftrace uses LLVM as a backend to compile scripts to eBPF bytecode and makes use of BCC as a library for interacting with the Linux eBPF subsystem as well as existing Linux tracing capabilities and attachment points.
 
