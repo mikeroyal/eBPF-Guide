@@ -35,8 +35,11 @@
 
 [eBPF](https://ebpf.io/) is a technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules. By making the Linux kernel programmable, infrastructure software can leverage existing layers, making them more intelligent and feature-rich without continuing to add additional layers of complexity to the system.
 
-[eBPF for Windows](https://github.com/microsoft/ebpf-for-windows) is an eBPF implementation that runs on top of Windows. eBPF is a well-known technology for providing programmability and agility, especially for extending an OS kernel, for use cases such as DoS protection and observability.
+[eBPF for Windows](https://github.com/microsoft/ebpf-for-windows) is an eBPF implementation that runs on top of Windows. eBPF is a well-known technology for providing programmability and agility, especially for extending an OS kernel, for use cases such as DoS protection and observability. [Cilium L4 Load Balancer using eBPF-for-Windows](https://github.com/microsoft/ebpf-for-windows-demo/blob/main/cilium/load_balancer/docs/CiliumL4LBSetup.md)
 
+[XDP(eXpress Data Path)](https://www.tigera.io/learn/guides/ebpf/) is a technology that allows developers to attach eBPF programs to low-level hooks, implemented by network device drivers in the Linux kernel(since version 4.8), as well as generic hooks that run after the device driver. XDP can be used to achieve high-performance packet processing in an eBPF architecture, primarily using kernel bypass. 
+
+[AF_XDP](https://01.org/linuxgraphics/gfx-docs/drm/networking/af_xdp.html) is an address family that is optimized for high performance packet processing.
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/145732237-9906cb94-41fb-4302-b1bf-b4584975534b.png">
@@ -60,7 +63,17 @@
 
 [Ply](https://github.com/iovisor/ply) is a dynamic tracer for Linux which is built upon eBPF. It has been designed with embedded systems in mind, is written in C and all that ply needs to run is libc and a modern Linux kernel with eBPF support, meaning, it does not depend on LLVM for its program generation. It has a C-like syntax for writing scripts and is heavily inspired by awk(1) and dtrace(1).
 
-[Tracee](https://github.com/aquasecurity/tracee) uses eBPF technology to detect and filter operating system events, helping you expose security insights, detect suspicious behavior, and capture forensic indicators.
+[Tracee](https://github.com/aquasecurity/tracee) is a Runtime Security and forensics tool for Linux. It is using Linux eBPF technology to trace your system and applications at runtime, and analyze collected events to detect suspicious behavioral patterns.
+
+[bpfcov](https://github.com/elastic/bpfcov) is a source-code based coverage for eBPF programs actually running in the Linux kernel.
+
+[eCapture](https://github.com/ehids/ecapture) is a tool that captures SSL/TLS text content without CA cert using eBPF.  
+
+[Tetragon](https://github.com/cilium/tetragon) is a eBPF-based Security Observability and Runtime Enforcement.
+ 
+[SkyWalking](https://github.com/apache/skywalking) is an open source APM system, including monitoring, tracing, diagnosing capabilities for distributed system in Cloud Native architecture. 
+
+[Skydive](https://github.com/skydive-project/skydive) is an open source real-time network topology and protocols analyzer. It aims to provide a comprehensive way of understanding what is happening in the network infrastructure.
 
 The [Linux kernel](https://www.kernel.org/) contains the eBPF runtime required to run eBPF programs. It implements the bpf(2) system call for interacting with programs, maps, BTF and various attachment points where eBPF programs can be executed from. The kernel contains a eBPF verifier in order to check programs for safety and a JIT compiler to translate programs to native machine code. User space tooling such as bpftool and libbpf are also maintained as part of the upstream kernel.
 
@@ -76,7 +89,7 @@ The [Linux kernel](https://www.kernel.org/) contains the eBPF runtime required t
 
 [Libbpf-rs](https://github.com/libbpf/libbpf-rs) is a safe, idiomatic, and opinionated wrapper API around libbpf written in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin) allows to write 'compile once run everywhere' (CO-RE) eBPF programs.
 
-[Redbpf](https://github.com/redsift/redbpf) is a Rust eBPF toolchain that contains a collection of Rust libraries to work with eBPF programs.
+[Redbpf](https://github.com/redsift/redbpf) is a Rust eBPF toolchain that contains a collection of Rust libraries to work with BPF/eBPF programs.
 
 # LLVM Development
 [Back to the Top](https://github.com/mikeroyal/eBPF-Guide#table-of-contents)
