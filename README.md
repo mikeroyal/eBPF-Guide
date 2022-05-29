@@ -44,17 +44,25 @@
 
 [eBPF for Windows](https://github.com/microsoft/ebpf-for-windows) is an eBPF implementation that runs on top of Windows. eBPF is a well-known technology for providing programmability and agility, especially for extending an OS kernel, for use cases such as DoS protection and observability. [Cilium L4 Load Balancer using eBPF-for-Windows](https://github.com/microsoft/ebpf-for-windows-demo/blob/main/cilium/load_balancer/docs/CiliumL4LBSetup.md)
 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/145732237-9906cb94-41fb-4302-b1bf-b4584975534b.png">
+  <br />
+</p>
+
+**eBPF Architecture Overview. Credit: [eBPF.io](https://ebpf.io/)**
+
 [XDP(eXpress Data Path)](https://www.tigera.io/learn/guides/ebpf/) is a technology that allows developers to attach eBPF programs to low-level hooks, implemented by network device drivers in the Linux kernel(since version 4.8), as well as generic hooks that run after the device driver. XDP can be used to achieve high-performance packet processing in an eBPF architecture, primarily using kernel bypass. 
 
 [AF_XDP](https://01.org/linuxgraphics/gfx-docs/drm/networking/af_xdp.html) is an address family that is optimized for high performance packet processing.
 
+[BPF Compiler Collection (BCC)](https://github.com/iovisor/bcc) is a toolkit for creating efficient kernel tracing and manipulation programs, and includes several useful tools and examples. It makes use of extended BPF (Berkeley Packet Filters), formally known as eBPF, a new feature that was first added to Linux 3.15. Though, much of what BCC uses requires Linux 4.1 and above.
+
 <p align="center">
- <img src="https://user-images.githubusercontent.com/45159366/145732237-9906cb94-41fb-4302-b1bf-b4584975534b.png">
+ <img src="https://user-images.githubusercontent.com/45159366/170851575-c767bb1a-74e3-47e0-bd08-59291eca7dd6.png">
   <br />
-  eBPF Architecture Overview
 </p>
 
-[BPF Compiler Collection (BCC)](https://github.com/iovisor/bcc) is a toolkit for creating efficient kernel tracing and manipulation programs, and includes several useful tools and examples. It makes use of extended BPF (Berkeley Packet Filters), formally known as eBPF, a new feature that was first added to Linux 3.15. Though, much of what BCC uses requires Linux 4.1 and above.
+**BCC performance tools. Credit: [Brendan Gregg](https://github.com/iovisor/bcc/blob/master/images/bcc_tracing_tools_2019.png)**
 
 [Bpftrace](https://github.com/iovisor/bpftrace) is a high-level tracing language for Linux eBPF. Its language is inspired by awk and C, and predecessor tracers such as DTrace and SystemTap. bpftrace uses LLVM as a backend to compile scripts to eBPF bytecode and makes use of BCC as a library for interacting with the Linux eBPF subsystem as well as existing Linux tracing capabilities and attachment points.
 
@@ -92,6 +100,8 @@ The [Linux kernel](https://www.kernel.org/) contains the eBPF runtime required t
 
 [Gobpf](https://github.com/iovisor/gobpf) is a Go-based library which provides Go bindings for the BCC framework as well as low-level routines to load and use eBPF programs from ELF files.
 
+[rbpf](https://github.com/qmonnet/rbpf) is a Rust virtual machine and JIT compiler for eBPF programs.
+
 [Libbpfgo](https://github.com/aquasecurity/libbpfgo) is a Go wrapper around libbpf. It supports BPF CO-RE and its goal is to be a complete implementation of libbpf APIs. It uses CGo to call into linked versions of libbpf.
 
 [Libbpf](https://github.com/libbpf/libbpf) is a C/C++ based library which is maintained as part of the upstream Linux kernel. It contains an eBPF loader which takes over processing LLVM generated eBPF ELF files for loading into the kernel. libbpf received a major boost in capabilities and sophistication and closed many existing gaps with BCC as a library. It also supports important features not available in BCC such as global variables and BPF skeletons.
@@ -103,23 +113,25 @@ The [Linux kernel](https://www.kernel.org/) contains the eBPF runtime required t
 ### Books & Tutorials
 [Back to the Top](https://github.com/mikeroyal/eBPF-Guide#table-of-contents)
 
- - [BPF Performance Tools (book) by Brendan Gregg](https://www.brendangregg.com/bpf-performance-tools-book.html). **[GitHub repo](https://github.com/brendangregg/bpf-perf-tools-book) for book**.
+  - [BPF Performance Tools (book) by Brendan Gregg](https://www.brendangregg.com/bpf-performance-tools-book.html). **[GitHub repo](https://github.com/brendangregg/bpf-perf-tools-book) for book**.
  
- - [Systems Performance: Enterprise and the Cloud, 2nd Edition (2020) by Brendan Gregg](https://www.brendangregg.com/systems-performance-2nd-edition-book.html)
+  - [Systems Performance: Enterprise and the Cloud, 2nd Edition (2020) by Brendan Gregg](https://www.brendangregg.com/systems-performance-2nd-edition-book.html)
  
- - [Security Observability with eBPF by Jed Salazar & Natalia Reka Ivanko](https://www.oreilly.com/library/view/security-observability-with/9781492096719/)
+  - [Security Observability with eBPF by Jed Salazar & Natalia Reka Ivanko](https://www.oreilly.com/library/view/security-observability-with/9781492096719/)
  
   - [What Is eBPF? by Liz Rice](https://www.oreilly.com/library/view/what-is-ebpf/9781492097266/)
+  
+  - [The Beginner's Guide to eBPF by Liz Rice](https://github.com/lizrice/ebpf-beginners)
  
- - [eBPF - From a Programmer’s Perspective by Niclas Hedam (PDF)](https://hed.am/papers/2021-EBPF.pdf)
+  - [eBPF - From a Programmer’s Perspective by Niclas Hedam (PDF)](https://hed.am/papers/2021-EBPF.pdf)
  
- - [Learn eBPF Tracing: Tutorial and Examples by Brendan Gregg](https://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html)
+  - [Learn eBPF Tracing: Tutorial and Examples by Brendan Gregg](https://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html)
  
- - [eBPF Instruction Set — The Linux Kernel documentation](https://www.kernel.org/doc/html/latest/bpf/instruction-set.html)
+  - [eBPF Instruction Set — The Linux Kernel documentation](https://www.kernel.org/doc/html/latest/bpf/instruction-set.html)
  
- - [How We Used eBPF to Build Programmable Packet Filtering in Magic Firewall | Cloudflare](https://blog.cloudflare.com/programmable-packet-filtering-with-magic-firewall/)
+  - [How We Used eBPF to Build Programmable Packet Filtering in Magic Firewall | Cloudflare](https://blog.cloudflare.com/programmable-packet-filtering-with-magic-firewall/)
  
- - [eBPF assembly with LLVM by Quentin Monnet](https://qmonnet.github.io/whirl-offload/2020/04/12/llvm-ebpf-asm/)
+  - [eBPF assembly with LLVM by Quentin Monnet](https://qmonnet.github.io/whirl-offload/2020/04/12/llvm-ebpf-asm/)
 
 # LLVM Development
 [Back to the Top](https://github.com/mikeroyal/eBPF-Guide#table-of-contents)
