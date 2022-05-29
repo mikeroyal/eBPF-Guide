@@ -16,6 +16,9 @@
 # Table of Contents
 
 1. [Getting Started with eBPF](https://github.com/mikeroyal/eBPF-Guide#getting-started-with-eBPF)
+   
+     - [eBPF Tools & Libraries](https://github.com/mikeroyal/eBPF-Guide#ebpf-tools--libraries)
+     - [Books & Tutorials](https://github.com/mikeroyal/eBPF-Guide#books--tutorials)
 
 2. [LLVM Development](https://github.com/mikeroyal/eBPF-Guide#llvm-development)
 
@@ -34,6 +37,8 @@
 
 # Getting Started with eBPF
 [Back to the Top](https://github.com/mikeroyal/eBPF-Guide#table-of-contents)
+
+## eBPF Tools & Libraries
 
 [eBPF](https://ebpf.io/) is a technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules. By making the Linux kernel programmable, infrastructure software can leverage existing layers, making them more intelligent and feature-rich without continuing to add additional layers of complexity to the system.
 
@@ -61,7 +66,7 @@
 
 [Hubble](https://github.com/cilium/hubble) is a fully distributed networking and security observability platform for cloud native workloads. It is built on top of Cilium and eBPF to enable deep visibility into the communication and behavior of services as well as the networking infrastructure in a completely transparent manner.
 
-[Pixie](https://docs.pixielabs.ai/) is an open-source observability tool for Kubernetes applications. Use Pixie to view the high-level state of your cluster (service maps, cluster resources, application traffic) and also drill down into more detailed views (pod state, flame graphs, individual full-body application requests).
+[Pixie](https://docs.pixielabs.ai/) is an open-source observability tool for Kubernetes applications. It's used to view the high-level state of your cluster (service maps, cluster resources, application traffic) and also drill down into more detailed views (pod state, flame graphs, individual full-body application requests).
 
 [Kubectl-trace](https://github.com/iovisor/kubectl-trace) is a kubectl plugin that allows for scheduling the execution of bpftrace(8) programs in Kubernetes clusters. kubectl-trace does not require installation of any components directly onto a Kubernetes cluster in order to execute bpftrace programs. When pointed to a cluster, it schedules a temporary job called trace-runner that executes bpftrace.
 
@@ -85,7 +90,7 @@ The [Linux kernel](https://www.kernel.org/) contains the eBPF runtime required t
 
 [LLVM compiler](https://llvm.org/) infrastructure contains the eBPF backend required to translate programs written in a C-like syntax to eBPF instructions. LLVM generates eBPF ELF files which contain program code, map descriptions, relocation information and BTF meta data. These ELF files contain all necessary information for eBPF loaders such as libbpf to prepare and load programs into the Linux kernel.
 
-[Gobpf](https://github.com/iovisor/gobpf) is a CGo-based library which provides Go bindings for the BCC framework as well as low-level routines to load and use eBPF programs from ELF files.
+[Gobpf](https://github.com/iovisor/gobpf) is a Go-based library which provides Go bindings for the BCC framework as well as low-level routines to load and use eBPF programs from ELF files.
 
 [Libbpfgo](https://github.com/aquasecurity/libbpfgo) is a Go wrapper around libbpf. It supports BPF CO-RE and its goal is to be a complete implementation of libbpf APIs. It uses CGo to call into linked versions of libbpf.
 
@@ -96,8 +101,9 @@ The [Linux kernel](https://www.kernel.org/) contains the eBPF runtime required t
 [Redbpf](https://github.com/redsift/redbpf) is a Rust eBPF toolchain that contains a collection of Rust libraries to work with BPF/eBPF programs.
 
 ### Books & Tutorials
+[Back to the Top](https://github.com/mikeroyal/eBPF-Guide#table-of-contents)
 
- - [BPF Performance Tools (book) by Brendan Gregg](https://www.brendangregg.com/bpf-performance-tools-book.html). [GitHub repo](https://github.com/brendangregg/bpf-perf-tools-book) for book.
+ - [BPF Performance Tools (book) by Brendan Gregg](https://www.brendangregg.com/bpf-performance-tools-book.html). **[GitHub repo](https://github.com/brendangregg/bpf-perf-tools-book) for book**.
  
  - [Systems Performance: Enterprise and the Cloud, 2nd Edition (2020) by Brendan Gregg](https://www.brendangregg.com/systems-performance-2nd-edition-book.html)
  
