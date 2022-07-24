@@ -42,14 +42,21 @@
 
 [eBPF](https://ebpf.io/) is a technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules. By making the Linux kernel programmable, infrastructure software can leverage existing layers, making them more intelligent and feature-rich without continuing to add additional layers of complexity to the system.
 
-[eBPF for Windows](https://github.com/microsoft/ebpf-for-windows) is an eBPF implementation that runs on top of Windows. eBPF is a well-known technology for providing programmability and agility, especially for extending an OS kernel, for use cases such as DoS protection and observability. [Cilium L4 Load Balancer using eBPF-for-Windows](https://github.com/microsoft/ebpf-for-windows-demo/blob/main/cilium/load_balancer/docs/CiliumL4LBSetup.md)
-
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/145732237-9906cb94-41fb-4302-b1bf-b4584975534b.png">
   <br />
 </p>
 
 **eBPF Architecture Overview. Credit: [eBPF.io](https://ebpf.io/)**
+
+[eBPF for Windows](https://github.com/microsoft/ebpf-for-windows) is an eBPF implementation that runs on top of Windows. eBPF is a well-known technology for providing programmability and agility, especially for extending an OS kernel, for use cases such as DoS protection and observability. [Cilium L4 Load Balancer using eBPF-for-Windows](https://github.com/microsoft/ebpf-for-windows-demo/blob/main/cilium/load_balancer/docs/CiliumL4LBSetup.md)
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/180627324-fc93c21f-a9be-41e6-9b78-aeebe78278cb.png">
+  <br />
+</p>
+
+**eBPF for Windows Architecture Overview. Credit: [Microsoft](https://cloudblogs.microsoft.com/opensource/2021/05/10/making-ebpf-work-on-windows/)**
 
 [XDP(eXpress Data Path)](https://www.tigera.io/learn/guides/ebpf/) is a technology that allows developers to attach eBPF programs to low-level hooks, implemented by network device drivers in the Linux kernel(since version 4.8), as well as generic hooks that run after the device driver. XDP can be used to achieve high-performance packet processing in an eBPF architecture, primarily using kernel bypass. 
 
