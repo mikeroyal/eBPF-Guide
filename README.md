@@ -110,6 +110,18 @@ The [Linux kernel](https://www.kernel.org/) contains the eBPF runtime required t
 
 [Redbpf](https://github.com/redsift/redbpf) is a Rust eBPF toolchain that contains a collection of Rust libraries to work with BPF/eBPF programs.
 
+[redcanary-ebpf-sensor](https://github.com/redcanaryco/redcanary-ebpf-sensor) - A set of BPF programs that gather security relevant event data from the Linux kernel. The BPF programs are combined into a single ELF file from which individual probes can be selectively loaded, depending on the running operating system and kernel version.
+ 
+[bpflock - Lock Linux machines](https://github.com/linux-lock/bpflock) is an eBPF driven security tool for locking and auditing Linux machines.
+
+[coroot-node-agent](https://github.com/coroot/coroot-node-agent) is an eBPF based Prometheus exporter that gathers comprehensive container metrics such as container-to-container TCP connections, network latency, CPU delay accounting, log summaries, cloud instance metadata, etc. 
+
+[Kernel-collector](https://github.com/netdata/kernel-collector) is a  Linux Kernel eBPF Collectors developed by Netdata.
+
+[socket-connect-bpf](https://github.com/p-/socket-connect-bpf/) is a BPF/eBPF Linux command line utility that writes human-readable information about each application that makes new (network) connections to the standard output.
+
+[Polycube](https://github.com/polycube-network/polycube) is an eBPF/XDP-based software framework for fast network services(such as bridges, routers, firewalls, and others) running in the Linux kernel. Polycube services, called cubes, can be composed to build arbitrary service chains and provide custom network connectivity to namespaces, containers, virtual machines, and physical hosts.
+
 ### Books & Tutorials
 [Back to the Top](https://github.com/mikeroyal/eBPF-Guide#table-of-contents)
 
