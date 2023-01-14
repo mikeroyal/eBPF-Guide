@@ -83,6 +83,8 @@
 
 [Pixie](https://docs.pixielabs.ai/) is an open-source observability tool for Kubernetes applications. It's used to view the high-level state of your cluster (service maps, cluster resources, application traffic) and also drill down into more detailed views (pod state, flame graphs, individual full-body application requests).
 
+[BumbleBee](https://github.com/solo-io/bumblebee) is a tool that helps to build, run and distribute eBPF programs using [OCI images](https://opencontainers.org/). It allows you to focus on writing eBPF code, while taking care of the user space components that automatically exposing your data as metrics or logs.
+
 [Kubectl-trace](https://github.com/iovisor/kubectl-trace) is a kubectl plugin that allows for scheduling the execution of bpftrace(8) programs in Kubernetes clusters. kubectl-trace does not require installation of any components directly onto a Kubernetes cluster in order to execute bpftrace programs. When pointed to a cluster, it schedules a temporary job called trace-runner that executes bpftrace.
 
 [Ply](https://github.com/iovisor/ply) is a dynamic tracer for Linux which is built upon eBPF. It has been designed with embedded systems in mind, is written in C and all that ply needs to run is libc and a modern Linux kernel with eBPF support, meaning, it does not depend on LLVM for its program generation. It has a C-like syntax for writing scripts and is heavily inspired by awk(1) and dtrace(1).
