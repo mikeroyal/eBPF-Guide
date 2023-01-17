@@ -85,6 +85,22 @@
 
 [BumbleBee](https://github.com/solo-io/bumblebee) is a tool that helps to build, run and distribute eBPF programs using [OCI images](https://opencontainers.org/). It allows you to focus on writing eBPF code, while taking care of the user space components that automatically exposing your data as metrics or logs.
 
+[Sysmon for Linux](https://github.com/Sysinternals/SysmonForLinux) is a tool that monitors and logs system activity including process lifetime, network connections, file system writes, and more. Sysmon works across reboots and uses advanced filtering to help identify malicious activity as well as how intruders and malware operate on your network.
+
+[KubeArmor](https://kubearmor.io/) is a cloud-native runtime security enforcement system that restricts the behavior (such as process execution, file access, and networking operations) of pods, containers, and nodes (VMs) at the system level. It leverages [Linux security modules (LSMs)](https://www.kernel.org/doc/html/latest/admin-guide/LSM/index.html) such as [AppArmor](https://www.apparmor.net/), [SELinux](https://selinuxproject.org/), or [BPF-LSM](https://docs.kernel.org/bpf/prog_lsm.html) to enforce the user-specified policies.
+
+[L3AFD](https://l3af.io/) is the primary component of the L3AF control plane. It's a daemon that orchestrates and manages multiple eBPF programs. L3AFD runs on each node where the user wishes to run eBPF programs. L3AFD reads configuration data and manages the execution and monitoring of eBPF programs running on the node.
+
+[Wachy](https://github.com/rubrikinc/wachy) is a tool that provides a UI for interactive eBPF-based userspace performance debugging. 
+
+[Merbridge](https://merbridge.io/) is a tool that uses eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge.
+
+[DeepFlow](https://github.com/deepflowys/deepflow) is a highly automated observability platform for cloud-native developers. Using new technologies such as eBPF, WASM, and OpenTelemetry, DeepFlow innovatively implements core mechanisms such as AutoTracing, AutoMetrics, AutoTagging, and SmartEncoding, which greatly avoids code instrumentation and significantly reduces the resource overhead of back-end data warehouses.  
+
+[Parca](https://parca.dev/) is a tool for continuous profiling for analysis of CPU and memory usage, down to the line number and throughout time. Saving infrastructure cost, improving performance, and increasing reliability.
+
+[loxilb](https://www.loxilb.io/) is a tool that provides service type external load-balancer for K8s using eBPF as its core engine. It powers Edge|5G|IoT|XaaS Apps. 
+
 [Kubectl-trace](https://github.com/iovisor/kubectl-trace) is a kubectl plugin that allows for scheduling the execution of bpftrace(8) programs in Kubernetes clusters. kubectl-trace does not require installation of any components directly onto a Kubernetes cluster in order to execute bpftrace programs. When pointed to a cluster, it schedules a temporary job called trace-runner that executes bpftrace.
 
 [Ply](https://github.com/iovisor/ply) is a dynamic tracer for Linux which is built upon eBPF. It has been designed with embedded systems in mind, is written in C and all that ply needs to run is libc and a modern Linux kernel with eBPF support, meaning, it does not depend on LLVM for its program generation. It has a C-like syntax for writing scripts and is heavily inspired by awk(1) and dtrace(1).
