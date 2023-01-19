@@ -38,6 +38,10 @@
 # Getting Started with eBPF
 [Back to the Top](https://github.com/mikeroyal/eBPF-Guide#table-of-contents)
 
+**eBPF Comapnies**
+
+* [Isovalent](https://isovalent.com/) is a company founded by the creators of [Cilium](https://cilium.io/) and [eBPF](https://ebpf.io/). We build open source software and enterprise solutions solving networking, security, and observability needs for modern cloud native infrastructure.
+
 ## eBPF Tools & Libraries
 
 [eBPF](https://ebpf.io/) is a technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules. By making the Linux kernel programmable, infrastructure software can leverage existing layers, making them more intelligent and feature-rich without continuing to add additional layers of complexity to the system.
