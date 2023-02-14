@@ -105,6 +105,12 @@
 
 [loxilb](https://www.loxilb.io/) is a tool that provides service type external load-balancer for K8s using eBPF as its core engine. It powers Edge|5G|IoT|XaaS Apps. 
 
+[kube-loxilb](https://github.com/loxilb-io/kube-loxilb) is loxilb's implementation of kubernetes service load-balancer spec which includes support for load-balancer class, IPAM (shared or exclusive) etc.
+
+[loxi-ccm](https://github.com/loxilb-io/loxi-ccm) is a tool that provides an implementation of kubernetes load-balancer spec but it runs as a part of cloud-provider and provides load-balancer life-cycle management as part of it. 
+
+[loxicmd](https://github.com/loxilb-io/loxicmd) is the command-line tool for loxilb. It is equivalent of "kubectl" for loxilb. 
+
 [Kubectl-trace](https://github.com/iovisor/kubectl-trace) is a kubectl plugin that allows for scheduling the execution of bpftrace(8) programs in Kubernetes clusters. kubectl-trace does not require installation of any components directly onto a Kubernetes cluster in order to execute bpftrace programs. When pointed to a cluster, it schedules a temporary job called trace-runner that executes bpftrace.
 
 [Ply](https://github.com/iovisor/ply) is a dynamic tracer for Linux which is built upon eBPF. It has been designed with embedded systems in mind, is written in C and all that ply needs to run is libc and a modern Linux kernel with eBPF support, meaning, it does not depend on LLVM for its program generation. It has a C-like syntax for writing scripts and is heavily inspired by awk(1) and dtrace(1).
