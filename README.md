@@ -43,7 +43,7 @@
 
 **eBPF Comapnies**
 
-* [Isovalent](https://isovalent.com/) is a company founded by the creators of [Cilium](https://cilium.io/) and [eBPF](https://ebpf.io/). We build open source software and enterprise solutions solving networking, security, and observability needs for modern cloud native infrastructure.
+* [Isovalent](https://isovalent.com/) is a company founded by the creators of [Cilium](https://cilium.io/) and [eBPF](https://ebpf.io/). They build open source software and enterprise solutions solving networking, security, and observability needs for modern cloud native infrastructure.
 
 ## eBPF Tools & Libraries
 
