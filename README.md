@@ -99,6 +99,18 @@
 
 [KubeArmor](https://kubearmor.io/) is a cloud-native runtime security enforcement system that restricts the behavior (such as process execution, file access, and networking operations) of pods, containers, and nodes (VMs) at the system level. It leverages [Linux security modules (LSMs)](https://www.kernel.org/doc/html/latest/admin-guide/LSM/index.html) such as [AppArmor](https://www.apparmor.net/), [SELinux](https://selinuxproject.org/), or [BPF-LSM](https://docs.kernel.org/bpf/prog_lsm.html) to enforce the user-specified policies.
 
+[Caretta](https://github.com/groundcover-com/caretta) is a lightweight, standalone tool that instantly creates a visual network map of the services running in your cluster. It leverages eBPF to efficiently map all service network interactions in a K8s cluster, and Grafana to query and visualize the collected data.
+
+[dae](https://github.com/daeuniverse/dae) is a Linux high-performance transparent proxy solution based on eBPF. 
+
+[eunomia-bpf](https://eunomia.dev/) is a compiler and runtime framework to help you Build, Distribute and Run CO-RE eBPF programs easier with JSON and Webassembly OCI images.
+
+[Kindling](https://github.com/kindlingproject/kindling) is an eBPF-based cloud native monitoring tool, which aims to help users understand the app behavior from kernel to code stack. With trace profiling, we hope the user can understand the application's behavior easily and find the root cause in seconds. It also provides an easy way to get an overview of network flows in the Kubernetes environment, and many built-in network monitor dashboards like TCP retransmit, DNS, throughput, and TPS. 
+
+[Odigos](https://odigos.io/) is a tool for Distributed tracing without code changes. It instantly monitor any application using OpenTelemetry and eBPF. 
+
+[SSHLog](http://www.sshlog.com/) is a Linux daemon written in C++ and Python that passively monitors OpenSSH servers via eBPF. It's configurable, any combination of features may be enabled, disabled, or customized. It works with your existing OpenSSH server process, no alternative SSH daemon is required. Simply install the sshlog package to begin monitoring SSH.
+
 [L3AFD](https://l3af.io/) is the primary component of the L3AF control plane. It's a daemon that orchestrates and manages multiple eBPF programs. L3AFD runs on each node where the user wishes to run eBPF programs. L3AFD reads configuration data and manages the execution and monitoring of eBPF programs running on the node.
 
 [Wachy](https://github.com/rubrikinc/wachy) is a tool that provides a UI for interactive eBPF-based userspace performance debugging. 
